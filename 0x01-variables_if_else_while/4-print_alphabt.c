@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <time.h>
+#include <stdio.h>
 
 /**
  *main - Prints some letters of alphabet
@@ -9,14 +10,13 @@
 int main(void)
 
 {
-char c;
-for (c = 'a'; c <= 'z'; c++)
+char ch;
+for (ch = 'a'; ch <= 'z'; ch++)
 {
-if (c != 'e' && c != 'q')
-{
-putchar(c);
+if (ch != 'e' && ch != 'q')
+putchar(ch);
 }
-putchar('\n');
+putchar(10);
 }
 return (0);
 }
